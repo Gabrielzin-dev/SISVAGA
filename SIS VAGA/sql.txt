@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS titulos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tipo TEXT,
+    descricao TEXT,
+    beneficiario TEXT,
+    data TEXT,
+    valor REAL,
+    status TEXT
+);
+
+
+
+   
+   
+INSERT INTO titulos (tipo, descricao, beneficiario, data, valor, status)
+    VALUES ('CREDITO', 'SALARIO', 'OFICINA', '2026-02-10', 2500, 'ABERTO');
+
+
+
+
+
+SELECT * FROM titulos;
+ 
+
+
+
+
+
+UPDATE titulos SET beneficiario = 'PROZ'  WHERE id = 5;
+
+
+
+
+
+
+DELETE FROM titulos WHERE id = 5;
